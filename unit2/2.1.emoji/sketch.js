@@ -1,6 +1,7 @@
 function setup() {
   // create a canvas
   createCanvas(400, 400);
+  angleMode(DEGREES)
 
   // disable animation
   noLoop();
@@ -22,9 +23,10 @@ fill("goldenrod");
   fill("goldenrod");
   ellipse(230,170,25,35)
 
+  stroke("goldenrod");
   strokeWeight(4);
 fill("goldenrod");
-  arc(200,200,25,35);
+  arc(200,200,25,35,);
 
   rectMode(CENTER);
  
