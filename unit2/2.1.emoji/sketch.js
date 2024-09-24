@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background(220);
-  rect(100, 50, 25, 75);
+  ellipse(200,200,250,250);
 
   rectMode(CENTER);
  
