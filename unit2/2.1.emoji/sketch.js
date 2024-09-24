@@ -12,8 +12,10 @@ function draw() {
   stroke("gold");
   strokeWeight(6);
   fill("yellow");
-
   ellipse(200,200,250,250);
+
+fill("goldenrod")
+  ellipse(100,100,50,50)
 
   rectMode(CENTER);
  
