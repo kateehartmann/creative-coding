@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background(220);
-  rect(100, 50, 25, 75)
+  rect(100,50,25,75)
 
   rectMode(CENTER);
  
