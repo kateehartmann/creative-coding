@@ -8,9 +8,11 @@ function setup() {
 
 function draw() {
   background(220);
+  
   stroke("gold");
   strokeWeight(6);
   Fill("yellow");
+
   ellipse(200,200,250,250);
 
   rectMode(CENTER);
