@@ -26,12 +26,12 @@ fill("goldenrod");
   stroke("goldenrod");
   strokeWeight(4);
   noFill();
-  arc(200,230,50,20,-90,90);
+  arc(200,230,50,21,-90,90);
 
   stroke("goldenrod");
   strokeWeight(4);
   noFill();
-  arc(200,250,50,20,-90,90);
+  arc(200,250,50,21,-90,90);
 
   rectMode(CENTER);
  
