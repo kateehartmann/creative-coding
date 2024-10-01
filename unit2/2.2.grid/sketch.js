@@ -11,7 +11,7 @@ function draw() {
   //move grid away from the side of the canvas
   translate(100,100);
   for (let x=0;x<8; x++){
-    for (let y=0;y,8; y++){
+    for (let y=0;y<8; y++){
       push();
       translate( x * 100, y * 100);
 
