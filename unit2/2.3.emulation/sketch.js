@@ -8,7 +8,5 @@ function setup() {
 
 function draw() {
 
-  background(#ddded9);
-  
-
+  background(225)
 }
