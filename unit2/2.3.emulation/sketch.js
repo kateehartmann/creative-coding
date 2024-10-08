@@ -19,6 +19,7 @@ function setup() {
   colors.push(color(0,204,255))//blue
   colors.push(color(255,100,200))//pink
   colors.push(color(0,255,0))//green
+  colors.push(color(255,204,0))//yellow
 
   //place random dots in each section
   for (let i = 0; i< numDots; i++){
@@ -28,7 +29,7 @@ function setup() {
     switch(area){
       case 0: //(full canvas)
       x = random(0,400);
-      y = random(0,400); // place dots randomly across entire canvas
+      y = random(0,50); // place dots randomly across entire canvas
       break;
 
       case 1: //small portion of canvas
@@ -45,6 +46,10 @@ function setup() {
       x = random(50,350);
       y = random(50,350); // place dots randomly in smaller portion of canvas
       break;
+
+      case 4: //left yellow section
+      x= random(0,50); 
+      y= random(0,400);
     }
     dots.push({position: createVector(x ,y), color: colors[area]});//store position and color
   }
