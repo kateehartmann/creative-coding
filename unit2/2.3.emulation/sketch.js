@@ -3,6 +3,11 @@ let dots = []; //hold dot positions
 let colors = []; //hold colors
 
 function setup() {
+  //This is an attempt to emulate Number 2 Serie 1.1-6, a work by Frieder Nake
+  //https://spalterdigital.com/artworks/number-2-serie-1-1-6/
+  //I watched all of the p5.js tutorial videos on youtube plus the map() video, as well as
+  //https://www.youtube.com/watch?v=cxppa6dNzxE this video on the switch function, which was 
+  //long, but also extremely helpful
   // create the canvas
   createCanvas(400, 400);
 
