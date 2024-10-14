@@ -7,7 +7,13 @@ function setup() {
   //https://spalterdigital.com/artworks/number-2-serie-1-1-6/
   //I watched all of the p5.js tutorial videos on youtube plus the map() video, as well as
   //https://www.youtube.com/watch?v=cxppa6dNzxE this video on the switch function, which was 
-  //long, but also extremely helpful
+  //long, but also extremely helpful.
+
+  //Here is my extra credit submission for the assignemnt 2.3.Emulation.
+  //I changed the sizes of the dots and made each color stay in the correct area of the canvas.
+  //I also did a better job of matching the colors.
+  
+  
   // create the canvas
   createCanvas(400, 400);
 
