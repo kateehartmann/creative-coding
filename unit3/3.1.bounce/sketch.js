@@ -6,7 +6,6 @@ let yspeed = 1;
 function setup() {
   createCanvas(400, 400);
 }
-translate(200,200);
 function draw() {
   background(220);
 
@@ -24,5 +23,6 @@ function draw() {
   x = x + xspeed; //iterate x
   y = y + yspeed; //iterate y
 
-  circle (x, y, 50); //draw a circle 
+  circle (x, y, 50); //draw a circle
+  translate(200,200); 
 }
