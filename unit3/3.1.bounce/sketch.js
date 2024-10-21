@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(220);
 
-  translate(0,0,200,200);
+  translate(200,200);
 
 
   if (x < 15 | x > 375){
