@@ -11,5 +11,8 @@ function draw() {
   background(220);
   translate(200,200);
 
+  x = x + xspeed; //iterate x
+  y = y + yspeed; //iterate y
+
   circle (x, y, 50); //draw a circle 
 }
