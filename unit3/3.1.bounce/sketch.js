@@ -10,12 +10,14 @@ function setup() {
 function draw() {
   background(220);
 
+  translate(200,200);
+
 
   if (x < 15 | x > 375){
     xspeed = xspeed * -1; //reverse the x direction
   }
 
-  if (y < 0 | y > 375){
+  if (y < 15 | y > 375){
     yspeed = yspeed * -1; //reverse the y direction
   }
 
