@@ -17,7 +17,7 @@ function draw() {
     xspeed = xspeed * -1; //reverse the x direction
   }
 
-  if (y < 0 | y > 376){
+  if (y < 0 | y > 375){
     yspeed = yspeed * -1; //reverse the y direction
   }
 
