@@ -11,7 +11,7 @@ function draw() {
   background(220);
 
 
-  if (x < 0 | x > 400){
+  if (x < 0 | x > 390){
     xspeed = xspeed * -1; //reverse the x direction
   }
 
