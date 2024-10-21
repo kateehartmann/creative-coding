@@ -11,11 +11,11 @@ function draw() {
   background(220);
 
 
-  if (x < 1 | x > width){
+  if (x < 10 | x > 390){
     xspeed = xspeed * -1; //reverse the x direction
   }
 
-  if (y < 0 | y > width){
+  if (y < 10 | y > 390){
     yspeed = yspeed * -1; //reverse the y direction
   }
 
