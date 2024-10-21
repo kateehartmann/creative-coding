@@ -9,6 +9,7 @@ function setup() {
 
 function draw() {
   background(220);
+  translate(200,200);
 
   circle (x, y, 50); //draw a circle 
 }
