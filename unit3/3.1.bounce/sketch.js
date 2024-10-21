@@ -24,5 +24,5 @@ function draw() {
   y = y + yspeed; //iterate y
 
   circle (x, y, 50); //draw a circle
-  translate(200,200); 
+  translateOrgin(200,200); 
 }
