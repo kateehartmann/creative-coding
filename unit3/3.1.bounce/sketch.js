@@ -1,7 +1,7 @@
 let x = 0;
 let y = 0;
 let xspeed = 3;
-let yspeed = 3;
+let yspeed = 1;
 
 function setup() {
   createCanvas(400, 400);
