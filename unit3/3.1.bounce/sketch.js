@@ -5,6 +5,7 @@ let yspeed = 3;
 
 function setup() {
   createCanvas(400, 400);
+  translate(200,200);
 }
 function draw() {
   background(220);
