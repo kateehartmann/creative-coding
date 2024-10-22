@@ -1,6 +1,6 @@
 let x = 0;
 let y = 0;
-let xspeed = 3;
+let xspeed = 2;
 let yspeed = 1;
 
 function setup() {
