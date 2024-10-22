@@ -25,5 +25,6 @@ function draw() {
   y = y + yspeed; //iterate y
 
   circle (x, y, 50); //draw a circle
+  fill(Rand(30,40));
   
 }
