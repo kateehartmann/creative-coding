@@ -1,13 +1,14 @@
 let x = 200;
 let y = 200;
-let xspeed = random(3,5);
-let yspeed = random(2,7);
+let xspeed ;
+let yspeed;
 let circleColor;
 
 function setup() {
   createCanvas(400, 400);
   circleColor = fill(100,100,250); //initial color
-
+xspeed = random(3,5);
+yspeed = random(3,5);
 }
 function draw() {
   background(220);
@@ -15,6 +16,7 @@ function draw() {
   if (x < 25 | x > 375){
     xspeed = xspeed * -1; //reverse the x direction
     changeColor();
+    
   }
 
   if (y < 25 | y > 375){
