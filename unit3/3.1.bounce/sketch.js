@@ -1,7 +1,7 @@
 let x = 200;
 let y = 200;
-let xspeed = 3;
-let yspeed = 2;
+let xspeed = random(3,5);
+let yspeed = random(2,7);
 let circleColor;
 
 function setup() {
