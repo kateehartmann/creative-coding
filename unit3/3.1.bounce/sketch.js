@@ -12,12 +12,12 @@ function setup() {
 function draw() {
   background(220);
 
-  if (x < 25 | x > 375){
+  if (x < 0 | x > 375){
     xspeed = xspeed * -1; //reverse the x direction
     changeColor();
   }
 
-  if (y < 25 | y > 375){
+  if (y < 0 | y > 375){
     yspeed = yspeed * -1; //reverse the y direction
     changeColor();
   }
