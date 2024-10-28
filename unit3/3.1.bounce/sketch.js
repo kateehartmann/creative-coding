@@ -1,3 +1,6 @@
+//When clicking on the canvas,the ball changes to a 
+//light blue color until it hits another wall 
+
 let x = 200;
 let y = 200;
 let xspeed ;
@@ -34,3 +37,7 @@ function changeColor() {
   circleColor = fill(random(173,216,320), random(30,144,255), random(0,255,255));//set color for change
 }
 
+function mouseReleased() { //changes circle color to light blue when mouse is released.
+  fill(173,216,320);
+  circle (random(0,400), random (0,400), random (10,45)); //draw a circle
+}
