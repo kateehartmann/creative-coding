@@ -3,8 +3,8 @@ let xspeed = speedfactor;
 let yspeed = speedfactor;
 let x = 0;
 let y = 0;
-let debug = false;
-let score = 20;
+let debug = true;
+let score = 50;
 let img; 
 
 
@@ -29,7 +29,7 @@ function draw() {
 
   //draw a circle 
   circle(x,y,50);
-  
+
 
   //move to the right
   if (mouseX > x){
@@ -58,11 +58,6 @@ if (d < 25){
 
   if (debug){ 
   textSize(30);
-  text("mouseX: " + mouseX, 50 ,50);
-  text("mouseY: " + mouseY, 50, 80);
-  text("x:" + x, 50 ,120);
-  text("y:" + y, 50, 150);
-  text("d: " + d, 50, 180);
   text("score: " + score, 50, 210);
 }
 }
