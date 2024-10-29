@@ -8,7 +8,7 @@ let score = 50;//sets the start score at 50
 let img;
  
 function preload(){
-  img = loadImage ('https://www.pngegg.com/en/png-xyetl');
+  img = loadImage ('https://kateehartmann.github.io/creative-coding/unit3/3.2.follower/pacman-ghost.png');
 }
 
 
@@ -31,7 +31,7 @@ function draw() {
   y += yspeed
 
   //draw the image 
-  image(img, 0, 0); //draw the image at 0,0
+  image(img, x, y, 50,50); //draw the image at 0,0
 
 
 
