@@ -1,14 +1,14 @@
 let speedfactor = 3; //sets speed
-let xspeed = speedfactor;
-let yspeed = speedfactor;
+let xspeed = speedfactor; //sets xspeed to speedfactor 
+let yspeed = speedfactor;//sets yspeed to speedfactor
 let x = 0;
 let y = 0;
 let debug = true;
 let score = 50;//sets the start score at 50 
 let img;
  
-function preload(){
-  img = loadImage ('https://kateehartmann.github.io/creative-coding/unit3/3.2.follower/pacman-ghost.png');
+function preload(){ //loads image 
+  img = loadImage ('https://kateehartmann.github.io/creative-coding/unit3/3.2.follower/pacman-ghost-3.png');
 }
 
 
@@ -64,6 +64,6 @@ if (d < 25){ //says what happens if the distance between the ball and mouse is l
 
   if (debug){ 
   textSize(30);
-  text("score: " + score, 50, 210);// displays score in the top left corner
+  text("score: " + score, 50, 50);// displays score in the top left corner
 }
 }
