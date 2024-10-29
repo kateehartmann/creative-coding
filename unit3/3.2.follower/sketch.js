@@ -8,7 +8,7 @@ let score = 50;//sets the start score at 50
 let img;
  
 function preload(){
-  img = loadImage ('pacman-ghost.png');
+  img = loadImage ('https://www.pngegg.com/en/png-xyetl');
 }
 
 
