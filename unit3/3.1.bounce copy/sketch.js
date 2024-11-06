@@ -1,43 +1,59 @@
-//When clicking on the canvas,the ball changes to a 
-//light blue color until it hits another wall 
-
-let x = 200;
-let y = 200;
-let xspeed ;
-let yspeed;
-let circleColor;
+let balls = [];  // array to store all the balls
 
 function setup() {
   createCanvas(400, 400);
-  circleColor = fill(100,100,250); //initial color
-xspeed = random(3,5);
-yspeed = random(3,5);
+  
+
+  balls.push(createBall(random(0, 400), random(0, 400), random(3, 5), random(3, 5)));//add the first ball
 }
+
 function draw() {
   background(220);
-
-  if (x < 25 | x > 375){
-    xspeed = xspeed * -1; //reverse the x direction
-    changeColor();
-    
-  }
-
-  if (y < 25 | y > 375){
-    yspeed = yspeed * -1; //reverse the y direction
-    changeColor();
-  }
-
-  x = x + xspeed; //iterate x
-  y = y + yspeed; //iterate y
-
-  circle (x, y, 50); //draw a circle
   
-}
-function changeColor() {
-  circleColor = fill(random(173,216,320), random(30,144,255), random(0,255,255));//set color for change
+  
+  for (let i = 0; i < balls.length; i++) {//loop each ball in teh array
+    let ball = balls[i];
+
+    
+    ball.x += ball.xspeed;//iterate x
+    ball.y += ball.yspeed;//iterate y
+
+    //check for collisions
+    if (ball.x < 25 || ball.x > 375) {
+      ball.xspeed = -ball.xspeed; //reverse the X direction
+      ball.circleColor = randomColor(); //change the color when bouncing
+    }
+
+    if (ball.y < 25 || ball.y > 375) {
+      ball.yspeed = -ball.yspeed; //reverse the Y direction
+      ball.circleColor = randomColor(); //change the color when bouncing
+    }
+
+    
+    fill(ball.circleColor);//set the fill color
+
+    
+    circle(ball.x, ball.y, 50);//draw the ball 
+  }
 }
 
-function mouseReleased() { //changes circle color to light blue when mouse is released.
-  fill(173,216,320);
-  circle (random(0,400), random (0,400), random (10,45)); //draw a circle
+function mousePressed() {
+  //add a new ball when the mouse is pressed
+  balls.push(createBall(random(25, 375), random(25, 375), random(3, 5), random(3, 5)));
+}
+
+//function to create new ball 
+function createBall(x, y, xspeed, yspeed) {
+  return {
+    x: x,
+    y: y,
+    xspeed: xspeed,
+    yspeed: yspeed,
+    circleColor: randomColor(),//random initial color
+  };
+}
+
+//function to make balls random color when they bounce off the walls 
+function randomColor() {
+  return color(random(0, 255), random(0, 255), random(0, 255));
 }
