@@ -4,7 +4,7 @@ function setup() {
   createCanvas(400, 400);
   
 
-  balls.push(createBall(random(0, 400), random(0, 400), random(3, 5), random(3, 5)));//add the first ball
+  balls.push(createBall(random(25, 375), random(25, 375), random(3, 5), random(3, 5)));//add the first ball
 }
 
 function draw() {
