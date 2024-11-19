@@ -36,7 +36,7 @@ let grammar = tracery.createGrammar(
   "in a closet"
 ],
 
-"origin": "a house of #material# \n   #light# \n      #location#"
+"origin": "a house of #material# \n   #light# \n      #location# "
 });
 
 quatrain = grammar.flatten("#origin#");
