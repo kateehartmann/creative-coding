@@ -3,21 +3,27 @@ let quatrain = '';
 let grammar = tracery.createGrammar(
   {
 "material": [
-  "SAND",
-  "DUST",
-  "LEAVES",
-  "PAPER",
-  "TIN",
-  "ROOTS",
-  "BRICK",
-  "BROKEN DISHES",
-  "WOOD",
-  "STRAW",
-  "WEEDS"
+  "legos",
+  "blocks",
+  "sticks",
+  "bricks",
+  "straw",
+  "candy",
+  "gingerbread",
+  "paper",
+  "cardboard",
+  "blankets",
+  "pillows"
 ],
 "light":[
-  "using electricity",
-  "with candles",
+  "using a fireplace",
+  "with windows",
+  "with harsh lights",
+  "with fairy lights",
+  "lit by a christmas tree",
+  "with jack-o-lanterns",
+  "on fire",
+  "using floating candles"
 ],
 "location":[
   "by the river",
@@ -25,10 +31,17 @@ let grammar = tracery.createGrammar(
   "in a parking lot",
   "on a cliff",
   "under a bridge",
-  "underwater"
+  "underwater",
+  "on a hill",
+  "in a closet"
 ],
+"inhabitants":[
+  "kids",
+  "parents",
 
-"origin": "A HOUSE OF #material# #light# #location#"
+]
+
+"origin": "a house of #material# \n #light# \n #location# /n #inhabitants# "
 });
 
 quatrain = grammar.flatten("#origin#");
