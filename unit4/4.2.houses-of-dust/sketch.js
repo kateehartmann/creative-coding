@@ -2,7 +2,7 @@ let quatrain = '';
 
 let grammar = tracery.createGrammar(
   {
-"material": [
+"material": [ //list of materials to build house out of 
   "legos",
   "blocks",
   "sticks",
@@ -21,7 +21,7 @@ let grammar = tracery.createGrammar(
   "cake",
   "cookies"
 ],
-"light":[
+"light":[ //list of lighting things 
   "using a fireplace",
   "with windows",
   "with harsh lights",
@@ -38,7 +38,7 @@ let grammar = tracery.createGrammar(
   "with 100 lamps",
 
 ],
-"location":[
+"location":[ //list of different locations for houses
   "by the river",
   "near the school",
   "in a parking lot",
@@ -59,7 +59,7 @@ let grammar = tracery.createGrammar(
   "in another house",
   "on an island"
 ],
-"inhabitants":[
+"inhabitants":[ //list of different people who can live inhouses
   "gingerbread men",
   "a family",
   "16 orphans",
@@ -83,14 +83,14 @@ let grammar = tracery.createGrammar(
 
 ],
 
-"origin": "a house of #material# \n   #light# \n      #location# \n          housing #inhabitants# "
-});
+"origin": "a house of #material# \n   #light# \n      #location# \n          housing #inhabitants#  "
+}); //the poem
 
 quatrain = grammar.flatten("#origin#");
 
 function setup() {
   createCanvas(800, 800);
-  frameRate(.1)
+  frameRate(.5) //writes new poems every 2 seconds 
 }
 
 function draw() {
@@ -98,9 +98,9 @@ function draw() {
 
   textSize(30);
 
-  for(let i = 1; i < 10; i+=3){
+  for(let i = 1; i < 30; i+=3){ //for loop allowing the poem to be written multiple times on the canvas
   quatrain = grammar.flatten("#origin#");
-  text(quatrain, 50, 50);
+  text(quatrain, 50, 50*i);
   }
 
 }
