@@ -19,21 +19,30 @@
     in a terminal window.
     -->
 
+    <!--https://nickm.com/poems/safety.html
+    above is the link to the original work that i modified.
+    I liked this work because it it different than the others, which generate paragraphs of text 
+    or lines at a time. This one felt like i could get a bit more creative. I chose to change the 
+    purpose of it. The original is a sort of warning sign telling the reader how to complete a task. 
+    I chose to make it more of a reminder list with a threat for not completing it. The first idea 
+    I had was to use the names of a bunch of people in my life. 
+    -->
+
     	<script>
       const title = [
         ['OR ELSE YOU WILL '],
         ['', '', '', '', '', '', '', '', 'DIE ', 'CRY'],
         ['FAIL', 'HURT ', 'SUFFER ', 'WEEP ', 'GRIEVE ',
-         'COMPLAIN', 'COLLAPSE', 'PANIC ', 'FIGHT '],
-        ['BETRAY', 'REJECT', 'DESTORY', 'EVAPORATE', 'DISAPPEAR', 'BREAK',
-         'MELT', 'WEEP', 'SHATTER', 'VOMIT']
+         'COMPLAIN ', 'COLLAPSE', 'PANIC ', 'FIGHT '],
+        ['WHEN YOU CRY', 'HAPPILY', 'VIVIDLY', 'LOUDLY', '. WOMP WOMP', 'SADLY',
+         'UNTIL THE SUN COMES UP', 'IN FRONT OF YOUR MOM', 'FOREVER', 'MISERABLY']
       ],
       text = [
-        [' PUSH ',' PULL ',' ROTATE ',' REMOVE ',' SLIDE ',' DISENGAGE ',
-         ' RETRACT ',' EXTEND ',' BREAK ',' SNAP '],
-        ['RUBBER','ROD','HANDLE','GLASS','RAMPART','RAIL','WIRE','DOOR',
-         'CISTERN','ELEMENT'],
-        ['', '', '', '', '', '', '', ' FORCEFULLY', ' UP', ' DOWN']
+        [' CALL ',' DANCE WITH ',' TELL A JOKE TO ',' HAVE LUNCH WITH ',' MEET ',' SEE ',
+         ' STUDY WITH ',' RUN TO ',' TEXT ',' WALK TO '],
+        ['JOYCE','JAY','MADDIE','GRANDAD','UNCLE JOHNNIE','ERIC','RACHEL','MITCHELL','JACKSON',
+         'ELLIE','LIZ'],
+        ['', '', '', '', '', '', '', ' TOMORROW', ' TODAY', ' NEXT WEEK']
       ];
 
       function choice(array) {
@@ -63,8 +72,8 @@
 
 </head>
 <body onload=go() style="font-size:3.2vh; margin:7vh; font-family:sans-serif">
-  <h1 style="color:red; text-align:center">LISTEN UP</h1>
-  <h2 style="color:green; text-align:center">YOU NEED TO COMPLETE THE LIST</h2>
+  <h1 style="color:rgb(135, 90, 175); text-align:center">LISTEN UP</h1>
+  <h2 style="color:rgb(0, 60, 108); text-align:center">YOU NEED TO COMPLETE THE LIST</h2>
   <h1 id=headline style="display:flex; justify-content:center"></h1>
   <div style="display:flex; justify-content:center">
   <ol id=instructions></ul>
