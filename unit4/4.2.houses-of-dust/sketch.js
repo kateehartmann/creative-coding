@@ -36,7 +36,7 @@ let grammar = tracery.createGrammar(
   "lit by the moon",
   "with no lights",
   "with 100 lamps",
-  
+
 ],
 "location":[
   "by the river",
@@ -59,8 +59,12 @@ let grammar = tracery.createGrammar(
   "in another house",
   "on an island"
 ],
+"inhabitants":[
+  "gingerbread men",
 
-"origin": "a house of #material# \n   #light# \n      #location# "
+],
+
+"origin": "a house of #material# \n   #light# \n      #location# \n          filled with #inhabitants# "
 });
 
 quatrain = grammar.flatten("#origin#");
