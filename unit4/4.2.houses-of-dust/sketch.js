@@ -96,7 +96,7 @@ function setup() {
 function draw() {
   background(220);
 
-  textSize(40);
+  textSize(30);
 
   for(let i = 1; i < 10; i+=1){
   quatrain = grammar.flatten("#origin#");
