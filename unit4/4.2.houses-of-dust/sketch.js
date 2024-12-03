@@ -34,7 +34,9 @@ let grammar = tracery.createGrammar(
   "using LED lights",
   "with flashlights",
   "lit by the moon",
-  "with no lights"
+  "with no lights",
+  "with 100 lamps",
+  
 ],
 "location":[
   "by the river",
@@ -50,7 +52,12 @@ let grammar = tracery.createGrammar(
   "in Chesapeake",
   "near the beach",
   "in China",
-  "in the woods"
+  "in the woods",
+  "in a tree",
+  "on a boat",
+  "in my moms backyard",
+  "in another house",
+  "on an island"
 ],
 
 "origin": "a house of #material# \n   #light# \n      #location# "
