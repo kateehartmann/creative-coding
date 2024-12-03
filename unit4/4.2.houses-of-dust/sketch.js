@@ -13,7 +13,13 @@ let grammar = tracery.createGrammar(
   "paper",
   "cardboard",
   "blankets",
-  "pillows"
+  "pillows",
+  "wood",
+  "steel",
+  "cotton balls",
+  "flowers",
+  "cake",
+  "cookies"
 ],
 "light":[
   "using a fireplace",
@@ -23,7 +29,12 @@ let grammar = tracery.createGrammar(
   "lit by a christmas tree",
   "with jack-o-lanterns",
   "on fire",
-  "using floating candles"
+  "using floating candles",
+  "with electricity",
+  "using LED lights",
+  "with flashlights",
+  "lit by the moon",
+  "with no lights"
 ],
 "location":[
   "by the river",
@@ -33,7 +44,13 @@ let grammar = tracery.createGrammar(
   "under a bridge",
   "underwater",
   "on a hill",
-  "in a closet"
+  "in a closet",
+  "at UMW",
+  "in Fredericksburg",
+  "in Chesapeake",
+  "near the beach",
+  "in China",
+  "in the woods"
 ],
 
 "origin": "a house of #material# \n   #light# \n      #location# "
