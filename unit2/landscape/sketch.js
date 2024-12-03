@@ -1,3 +1,9 @@
+//I started this assignemnt with the idea of having the road,
+//grassy hill, and a city scape in the background. I changed my mind 
+//to go with pine trees and a moon because that is more relevant to me. 
+//I wanted it to be closer to my own life. I live in the middle of nowhere
+//and grew up spending alot of time in the woods, so i guess 
+//you can say this work is inspired by my home.
 function setup() {
 
   // create the canvas
