@@ -13,23 +13,35 @@
 	notice and this notice are preserved. This file is offered as-is,
 	without any warranty.
 	-->
+
+    <!--https://nickm.com/memslam/love_letters.html
+    above is the link to the original work by Nick Montfort which was based off a work 
+    by Christopher Strachey. 
+    I thought the love letters idea was really cool, but decided to make it the exact opposite
+    by turning them into hate letters. you never really hear of hate letters so i thought it would
+    be cool. I also tried to make it look more hateful, so i changed the header color to red because 
+    that makes me think of hate. 
+
+    -->
 	<style>
 		body {
 			margin: 0;
 			font-family: monospace;
 			font-size: clamp(1rem, 1vw, 1.5rem);
 			overflow:hidden;
+            color: rgb(0, 0, 0);
 		}
 		header {
-			background: #ddd;
+			background: #d81717;
 			margin: 0;
-			border-bottom: #eee solid .2rem;
+			border-bottom: #d81717 solid .2rem;
 			width: 100%;
-			height: 5.2rem;
+			height: 5.5rem;
 			position: fixed;
 			top: 0;
 			left: 0;
 			z-index: 1000;
+            color: aliceblue;
 		}
 		header > h1 {
 			padding: .3rem .8rem .2rem .8rem;
@@ -52,31 +64,31 @@
 
 		const hugeSpace = '<br><br>          ',
 						  // All non-breaking spaces
-		first = ['Darling', 'Dear', 'Honey', 'Jewel'],
-		second = ['duck', 'love', 'moppet', 'sweetheart'],
-		adjectives = ['adorable', 'affectionate', 'amorous', 'anxious', 
-			'ardent', 'avid', 'breathless', 'burning', 'covetous', 'craving', 
-			'curious', 'darling', 'dear', 'devoted', 'eager', 'erotic', 
-			'fervent', 'fond', 'impatient', 'keen', 'little', 'loveable', 
-			'lovesick', 'loving', 'passionate', 'precious', 'sweet', 
-			'sympathetic', 'tender', 'unsatisfied', 'wistful'],
-		nouns = ['adoration', 'affection', 'ambition', 'appetite', 'ardour', 
-			'charm', 'desire', 'devotion', 'eagerness', 'enchantment', 
-			'enthusiasm', 'fancy', 'fellow feeling', 'fervour', 'fondness', 
-			'heart', 'hunger', 'infatuation', 'liking', 'longing', 'love', 
-			'lust', 'passion', 'rapture', 'sympathy', 'tenderness', 'thirst', 
-			'wish', 'yearning'],
-		adverbs = ['affectionately', 'anxiously', 'ardently', 'avidly', 
-			'beautifully', 'breathlessly', 'burningly', 'covetously', 
-			'curiously', 'devotedly', 'eagerly', 'fervently', 'fondly', 
-			'impatiently', 'keenly', 'lovingly', 'passionately', 'seductively',
-			'tenderly', 'winningly', 'wistfully'],
-		verbs = ['adores', 'attracts', 'cares for', 'cherishes', 'clings to', 
-			'desires', 'holds dear', 'hopes for', 'hungers for', 
-			'is wedded to', 'likes', 'longs for', 'loves', 'lusts after', 
-			'pants for', 'pines for', 'prizes', 'sighs for', 'tempts', 
-			'thirsts for', 'treasures', 'wants', 'wishes', 'woos', 
-			'yearns for'];
+		first = ['Stupid', 'Dear', 'Ugly', 'Stinky'],
+		second = ['duck', 'poopy head', 'fart', 'butt'],
+		adjectives = ['ugly', 'egotistical', 'detestable', 'gruesome', 
+			'heinous', 'despicable', 'repulsive', 'burning', 'toxic', 'vile', 
+			'smelly', 'nefarious', 'spiteful', 'wicked', 'abominable', 'stupid', 
+			'annoying', 'clueless', 'controlling', 'cowardly', 'dim-witted', 'good-for-nothing', 
+			'incompetent', 'lazy', 'lousy', 'narcissistic', 'obnoxious', 
+			'shady', 'self-centered', 'two-faced', 'useless'],
+		nouns = ['abhorrence', 'animosity', 'anger', 'contempt', 'cruelty', 
+			'disdain', 'enmity', 'frustration', 'hatred', 'hostility', 
+			'loathing', 'malice', 'misery', 'neglect', 'rage', 
+			'resentment', 'scorn', 'spite', 'tension', 'toxicity', 'vengeance', 
+			'vindictiveness', 'wrath', 'alienation', 'grudge', 'bitterness', 'envy', 
+			'friction', 'repulsion'],
+		adverbs = ['angrily', 'anxiously', 'bitterly', 'coldly', 
+			'cruelly', 'darkly', 'disdainfully', 'ferociously', 
+			'hatredly', 'hostilely', 'maliciously', 'fervently', 'fondly', 
+			'impatiently', 'keenly', 'lovingly', 'mockingly', 'neglectfully',
+			'pettily', 'resentfully', 'ruthlessly'],
+		verbs = ['beats up', 'begrudges', 'betrays', 'blames', 'contempts', 
+			'dislikes', 'enrages', 'evokes', 'hates', 
+			'insults', 'jeers at', 'longs to punch in the face', 'loathes', 'mocks', 
+			'maligns', 'neglects', 'offends', 'rejects', 'resents', 
+			'spites', 'torments', 'tramples on', 'vilifies', 'harms', 
+			'ridicules'];
 
 		function fullscreenListeners(f)
 		{
@@ -149,7 +161,7 @@
 				}
 			}
 			text = text + hugeSpace + 'Yours ' + pick(adverbs) + 
-					hugeSpace + '     ' + 'M.U.C.';
+					hugeSpace + '     ' + 'K.G.H.';
 			return text;
 		}
 
@@ -178,14 +190,14 @@
 				onclick="caps=!caps;cl.style.color=caps?'black':'red'">⇪</a> 
 				<a onclick=fullscreenEvt(true)>⛶</a>
 				</span>
-			Love Letters (1953)<br>
+			Hate Letters (2024)<br>
+            by Kate Hartman<br>
 			based on a work by  
-		<a href="https://en.wikipedia.org/wiki/Christopher_Strachey">Christopher
-			Strachey</a><br>
-			code by <a href="https://nickm.com">Nick Montfort,</a>
-			also in <a href="love_letters.py">Python 2/3</a><br>
-			from <a href="https://nickm.com/memslam/">Memory Slam 2.0</a> 
-			Batch-Era Text Generators
+		    Nick Montfort<br>
+            Who based it off of a work by Christopher Strachey<br>
+            BOOM!
+			
+            
 		</h1>
 	</header>
 	<div id=main></div>
