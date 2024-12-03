@@ -98,7 +98,7 @@ function draw() {
 
   textSize(30);
 
-  for(let i = 1; i < 10; i+=1){
+  for(let i = 1; i < 10; i+=3){
   quatrain = grammar.flatten("#origin#");
   text(quatrain, 50, 50);
   }
