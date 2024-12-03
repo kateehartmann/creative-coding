@@ -61,10 +61,29 @@ let grammar = tracery.createGrammar(
 ],
 "inhabitants":[
   "gingerbread men",
+  "a family",
+  "16 orphans",
+  "old people",
+  "grandmas",
+  "grandpas",
+  "Santa Clause and his elves",
+  "the Grinch",
+  "murderers",
+  "beans",
+  "pumpkins",
+  "zucchinis",
+  "friends",
+  "Kenzie",
+  "people names Kate",
+  "horses",
+  "alligators",
+  "Dr. Whalen",
+  "pink ponies",
+  "country music singers",
 
 ],
 
-"origin": "a house of #material# \n   #light# \n      #location# \n          filled with #inhabitants# "
+"origin": "a house of #material# \n   #light# \n      #location# \n          housing #inhabitants# "
 });
 
 quatrain = grammar.flatten("#origin#");
