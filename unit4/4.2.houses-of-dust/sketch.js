@@ -74,7 +74,7 @@ let grammar = tracery.createGrammar(
   "zucchinis",
   "friends",
   "Kenzie",
-  "people names Kate",
+  "people named Kate",
   "horses",
   "alligators",
   "Dr. Whalen",
@@ -90,12 +90,17 @@ quatrain = grammar.flatten("#origin#");
 
 function setup() {
   createCanvas(800, 800);
-  noLoop();
+  frameRate(.1)
 }
 
 function draw() {
   background(220);
 
   textSize(40);
+
+  for(let i = 1; i < 10; i+=1){
+  quatrain = grammar.flatten("#origin#");
   text(quatrain, 50, 50);
+  }
+
 }
