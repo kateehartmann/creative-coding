@@ -10,6 +10,11 @@ function preload() {
 }
 
 function setup(){
+
+  let data = document.getElementById("source").innerText;
+rm.addText(data);
+
+
 let lines = rm.generate(6);
 
 //find the element to add to 
