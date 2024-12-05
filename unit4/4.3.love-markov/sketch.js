@@ -1,8 +1,7 @@
 
 
 let rm = RiTa.markov(2);
-let data = document.getElementById("source").innerText;
-rm.addText(data);
+
 
 
 function preload() {
