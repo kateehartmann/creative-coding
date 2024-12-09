@@ -30,19 +30,15 @@ let word = "fire"; //word that is repreated throughout the entire book
 let wc = 0; 
 
 function setup() {
-
   // We won't need any canvas
   noCanvas();
 
- 
   let content = select("body");
   content.attribute("id","content");
   
-  content.child(createElement("h1","Many " + word + "s")); //header with title of the book 
-  
+  content.child(createElement("h1","Fire Burns Forever")); //header with title of the book 
   
   // make a sentence
-  
   while( wc < 50000){//loop to generate content until the word count reaches 50,000
     content.child(createElement("h2",String(word+" ").repeat(random(2,6)).toUpperCase()));//create subheader 
     
@@ -65,8 +61,8 @@ function setup() {
       }
       content.child(createElement("p",paragraph)); //add a paragraph element with the generated text
     }
-    
   }
   
- window.PagedPolyfill.preview(); 
+ // trigger the polyfill rendering
+ window.PagedPolyfill.preview();
 }
