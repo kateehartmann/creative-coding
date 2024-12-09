@@ -18,8 +18,13 @@ What You Should Do:
  - tweak the book layout options so it looks good.
  - take a look through the code below, which is written in a fairly
    verbose way so that you can adjust any aspect you need to. 
-   
 */
+
+//I chose to use the word "fire" because the way the words repeat, it reminds me of an echo. 
+//At the summer camp I work at, I always lead the song "Ole Miss Oleary", which is a song 
+//about the cow that started the great chicago fire. At the end of the song, we yell 
+//"FIRE, FIRE, FIRE" as loud as possible. The campfire circle where we sing this song is 
+//along the edge of the lake, so we can always hear the word fire echoing across the lake. 
 
 let word = "fire"; //word that is repreated throughout the entire book
 let wc = 0; 
@@ -60,8 +65,6 @@ function setup() {
       }
       content.child(createElement("p",paragraph)); //add a paragraph element with the generated text
     }
-    
-  
     
   }
   
