@@ -21,8 +21,8 @@ What You Should Do:
    
 */
 
-let word = "quack";
-let wc = 0;
+let word = "fire"; //word that is repreated throughout the entire book
+let wc = 0; 
 
 function setup() {
 
@@ -33,37 +33,37 @@ function setup() {
   let content = select("body");
   content.attribute("id","content");
   
-  content.child(createElement("h1","Many " + word + "s"));
+  content.child(createElement("h1","Many " + word + "s")); //header with title of the book 
   
   
   // make a sentence
   
-  while( wc < 50000){
-    content.child(createElement("h2",String(word+" ").repeat(random(2,6)).toUpperCase()));
+  while( wc < 50000){//loop to generate content until the word count reaches 50,000
+    content.child(createElement("h2",String(word+" ").repeat(random(2,6)).toUpperCase()));//create subheader 
     
-    for (let p = 0; p < random(5,20); p++){
+    for (let p = 0; p < random(5,20); p++){ //loop that creates paragraphs
       let paragraph = '';
-      for (let s = 0; s < random(3,20); s++){
-        let internalPunct = [",",",",",",";"," --"];
-        let endPunct = [".",".","?","!"];
-        let sentence = word.charAt(0).toUpperCase() + word.slice(1);
-        let sentenceLength = random(9,25);
+      for (let s = 0; s < random(3,20); s++){ //create sentences in paragraphs
+        let internalPunct = [",",",",",",";"," --"]; //puntucation inside of sentences
+        let endPunct = [".",".","?","!"]; //punctuation at the end of sentences 
+        let sentence = word.charAt(0).toUpperCase() + word.slice(1); //capitalize first letter
+        let sentenceLength = random(9,25); //random length of sentences between 9 and 25 words
         wc += sentenceLength + 1;
         for (let w = 0; w < sentenceLength; w++){
-          sentence += " " + word;
-          if (random() < 0.2){
+          sentence += " " + word; //add the word to the sentence
+          if (random() < 0.2){  //randomly add punctuation in the sentence
             sentence += random(internalPunct);
           }
         }
-        sentence += random(endPunct) + " ";
-        paragraph += sentence;
+        sentence += random(endPunct) + " "; //add an ending punctuation mark and space
+        paragraph += sentence; //add sentence to paragraph
       }
-      content.child(createElement("p",paragraph));
+      content.child(createElement("p",paragraph)); //add a paragraph element with the generated text
     }
     
   
     
   }
   
- window.PagedPolyfill.preview();
+ window.PagedPolyfill.preview(); 
 }
