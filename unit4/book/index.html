@@ -26,11 +26,10 @@
 
 .pagedjs_page{
        position: relative;
-       background-image: url('/creative-coding-real/unit4/book/parchment.png');
-        background-size: cover;
+       background-image: url('https://kateehartmann.github.io/creative-coding/unit4/book/parchment.png');
+        background-size: 150% 150%;
         background-repeat: no-repeat;
         background-position: center;
-        background-color: #f8f5e1;
 
        }
 
@@ -41,14 +40,15 @@
     
 
        .pagedjs_page::after {
-              content: "Page " counter(page);
+              content:  counter(page);
               position: absolute;
               bottom: 0.5cm;
               left: 0;
               right: 0;
               text-align: center;
-              font-size: 12px;
-              color: #555;   
+              font-size: 20px;
+              color: #000000;  
+              font-family: cursive; 
    
        }
     </style>
