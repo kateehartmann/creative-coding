@@ -23,17 +23,22 @@
     -->  
 
     <style type="text/css">
+
+.pagedjs_page{
+       position: relative;
+       background-image: url('/creative-coding-real/unit4/book/parchment.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f8f5e1;
+
+       }
+
        @page {
               margin-bottom: 1.5cm;
        }
        
-       .pagedjs_page{
-       position: relative;
-       background-image: url('unit4/book/parchment.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-       }
+    
 
        .pagedjs_page::after {
               content: "Page " counter(page);
@@ -43,7 +48,8 @@
               right: 0;
               text-align: center;
               font-size: 12px;
-              color: #555;      
+              color: #555;   
+   
        }
     </style>
 
