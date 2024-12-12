@@ -16,16 +16,13 @@ function draw() {
       translate( x * 100, y * 100);
 
       //circle color
-      fill(158,217,177)
+      fill(158,217,177);
 
-      //stroke color
-      stroke(24,112,153)
-
-      //stroke size
-      strokeWeight( random(1,14))
+      //no stroke
+      noStroke();
 
       //draw squares
-      rect(0,0,100,100)
+      rect(0,0,100,100);
 
       pop()
     }
