@@ -9,14 +9,37 @@
 let secondBarHeight = 0; //set start height for second bar
 let minuteBarHeight = 0; //set start height for minute bar 
 let hourBarHeight = 0; //set start height for hour bar 
+let backgroundImage;
+let sunrise, sunset, daytime, nightime;
+
+
+function preload(){//load images
+  sunrise = loadImage('sunrise-over-skyline-stockcake.jpg');
+  sunset = loadImage('sunset-city-reflection-stockcake.jpg');
+  daytime = loadImage('skyscraper-horizon-city-architecture-thumb.jpg');
+  nightime = loadImage('nighttime-cityscape-illumination-stockcake.jpg')
+}
 
 function setup() {
   createCanvas(800, 800); //set canvas size to 800 x 800
   noStroke(); //set no stroke to entire thing
+
 }
 
-function draw() {
-  background(255,143,160); //set background color to pink
+function draw() { //background image based on the current time 
+  
+  if(hour()>= 6 && hour()<=7){
+    backgroundImage = sunrise;
+  }else if(hour()> 7 && hour()<= 18){
+    backgroundImage = daytime;
+  }else if (hour()> 18 && hour()<=19){
+    backgroundImage = sunset;
+  }else{
+    backgroundImage = nightime;
+  }
+
+  image(backgroundImage, 0, 0, width, height);
+
 
   let currentTime = new Date(); //get the current time
   let seconds = currentTime.getSeconds(); //
