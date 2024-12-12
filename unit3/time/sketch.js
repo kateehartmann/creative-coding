@@ -6,6 +6,13 @@
 //I like this because when i think about what time is too hard
 //it hurts my brain, so i wanted it to be simple.
 
+
+//UPDATE! after hearing i could resubmit this for maybe an extra point and a half, 
+//I decided it would be fun to put a background behind the bars! 
+//Since I have an upcoming trip to New York, I was drawn to the cityscape! 
+//The images change during the day, sunrise, and sunset. 
+//this took a minute to figure out, but I think it looks pretty cool. 
+
 let secondBarHeight = 0; //set start height for second bar
 let minuteBarHeight = 0; //set start height for minute bar 
 let hourBarHeight = 0; //set start height for hour bar 
@@ -14,10 +21,10 @@ let sunrise, sunset, daytime, nightime;
 
 
 function preload(){//load images
-  sunrise = loadImage('sunrise-over-skyline-stockcake.jpg');
-  sunset = loadImage('sunset-city-reflection-stockcake.jpg');
-  daytime = loadImage('skyscraper-horizon-city-architecture-thumb.jpg');
-  nightime = loadImage('nighttime-cityscape-illumination-stockcake.jpg')
+  sunrise = loadImage('https://kateehartmann.github.io/creative-coding/unit3/time/sunrise-over-skyline-stockcake.jpg');
+  sunset = loadImage('https://kateehartmann.github.io/creative-coding/unit3/time/sunset-city-reflection-stockcake.jpg');
+  daytime = loadImage('https://kateehartmann.github.io/creative-coding/unit3/time/skyscraper-horizon-city-architecture-thumb.jpg');
+  nightime = loadImage('https://kateehartmann.github.io/creative-coding/unit3/time/nighttime-cityscape-illumination-stockcake.jpg')
 }
 
 function setup() {
