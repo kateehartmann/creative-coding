@@ -1,6 +1,9 @@
 //I made alot of significant advancements on this assignment.
 //there is now a variety of colors for the dots to choose from, and the size
-//of the dots is random with each generation. 
+//of the dots is random with each generation. The stroke size
+//is also random within a certain range with each generation. 
+//I also gave the background a better color.
+//overall, this version is much more visually appealing and has more complexity to it. 
 
 function setup() {
   // create a canvas

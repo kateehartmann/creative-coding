@@ -36,9 +36,9 @@ function draw() {
   rect(100, height - secondBarHeight - 50, 50, secondBarHeight); //draw the second bar
 
   fill (255, 203, 210); //pink
-  rect(200, height - minuteBarHeight - 50, 50, minuteBarHeight); //draw the minute bar
+  rect(400, height - minuteBarHeight - 50, 50, minuteBarHeight); //draw the minute bar
 
   fill(255, 164, 71);//orange
-  rect(300, height - hourBarHeight - 50, 50, hourBarHeight); //draw the hour bar
+  rect(700, height - hourBarHeight - 50, 50, hourBarHeight); //draw the hour bar
 }
 
